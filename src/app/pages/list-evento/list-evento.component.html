@@ -1,27 +1,21 @@
 <section class="container">
-    <table class="table" *ngIf="eventos | async as users">
-        <tr>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>Tema</th>
-            <th>Data</th>
-            <th>Horario</th>
-        </tr>
-        <tr *ngFor="let user of users">
+        
+    <div class="row" *ngIf="eventos | async as users">
            
-           <td>{{user.id}}</td>
-            <td>{{user.nome}}</td>
-            <td>{{user.tema}}</td>
-            <td>{{user.data}}</td>
-            <td>{{user.horario}}</td>
-        </tr>
-        <div class="card" style="width: 18rem;">
-            
-            <div class="card-body">
-              <h5 class="card-title">Eventos</h5>
-              <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-              <a href="#" class="btn btn-primary">Visitar</a>
+        <div *ngFor="let user of users">
+            <div class="card-deck" >
+                <div class="card"  >                    
+                    <div class="card-body  m-1 bg-light" >
+                        <h5 class="card-title ">Evento: {{user.nome}} </h5>
+                        <p class="card-text">Tema: {{user.tema}}</p>
+                        <p class="card-text">Data: {{user.data}}</p>
+                        <p class="card-text">Horário: {{user.horario}}</p> 
+                                          
+                    </div>
+                </div>
             </div>
-          </div>
-    </table>
+        </div>
+    </div>
+    
+    
 </section>

@@ -8,125 +8,32 @@
       "nome": "felipe",
       "email": "liepjf@154@gmail.com",
       "id": 1
-    },
-    {
-      "ativo": true,
-      "nome": "felipe",
-      "email": "liepjf@154@gmail.com",
-      "id": 2
-    },
-    {
-      "ativo": true,
-      "nome": "felipe",
-      "email": "liepjf@154@gmail.com",
-      "id": 3
-    },
-    {
-      "ativo": true,
-      "nome": "felipe",
-      "email": "liepjf@154@gmail.com",
-      "id": 4
-    },
-    {
-      "ativo": true,
-      "nome": "felipe",
-      "email": "liepjf@154@gmail.com",
-      "id": 5
-    },
-    {
-      "ativo": true,
-      "nome": "davi",
-      "email": "limadavi@gmail.com",
-      "id": 6
-    },
-    {
-      "ativo": true,
-      "nome": "tipo",
-      "email": "loja01@portaltipo.com.br",
-      "id": 7
-    },
-    {
-      "ativo": true,
-      "nome": "tip",
-      "email": "loja01@portal",
-      "id": 8
-    },
-    {
-      "ativo": true,
-      "nome": "h",
-      "email": "hdr",
-      "id": 9
-    },
-    {
-      "ativo": true,
-      "nome": "felipe",
-      "email": "liepjf@154@gmail.com",
-      "id": 10
-    },
-    {
-      "ativo": true,
-      "nome": "d",
-      "email": "d",
-      "id": 11
-    },
-    {
-      "ativo": true,
-      "nome": "hhhh",
-      "email": "h",
-      "id": 12
     }
   ],
   "eventos": [
     {
-      "id": 0
-    },
-    {
       "ativo": true,
       "nome": "futebol",
       "tema": "bola",
-      "data": "2019-09-13",
-      "hora": "20:50",
-      "id": 9
+      "data": "2019-09-12",
+      "horario": "12:12",
+      "id": 1
     },
     {
       "ativo": true,
       "nome": "volei",
       "tema": "rede",
-      "data": "2019-09-20",
-      "hora": "12:00",
-      "id": 10
-    },
-    {
-      "ativo": true,
-      "nome": "futebol",
-      "tema": "rede",
-      "data": "2019-09-03",
-      "hora": "15:30",
-      "id": 11
-    },
-    {
-      "ativo": true,
-      "nome": "futebol",
-      "tema": "bola",
-      "data": "2019-09-02",
-      "hora": "20:20",
-      "id": 12
-    },
-    {
-      "ativo": true,
-      "nome": "futebol",
-      "tema": "rede",
       "data": "2019-09-12",
-      "hora": "15:15",
-      "id": 13
+      "horario": "12:30",
+      "id": 2
     },
     {
       "ativo": true,
-      "nome": "ape",
+      "nome": "festa",
       "tema": "chop",
-      "data": "2019-09-11",
-      "horario": "00:00",
-      "id": 14
+      "data": "2019-09-29",
+      "horario": "21:57",
+      "id": 3
     }
   ]
 }
