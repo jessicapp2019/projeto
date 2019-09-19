@@ -10,31 +10,33 @@ import { Router } from '@angular/router';
 })
 export class AddUsuarioComponent implements OnInit {
 
-  protected usuario:Usuario = new Usuario;
+  protected usuario: Usuario = new Usuario;
 
   constructor(
-    protected usuarioService:UsuarioService,
-    private router:Router
+    protected usuarioService: UsuarioService,
+    private router: Router
   ) { }
 
   ngOnInit() {
   }
 
-  onsubmit(form){
+  onsubmit(form) {
     console.log(this.usuario);
     this.usuarioService.save(this.usuario)
-    .subscribe(
-      res => {
-        console.log("Cadastrado!",res);
-        alert("Cadastrado!");
-        this.router.navigate(['']);
-      },
-      err => {
-        console.log("Não cadastrado!",err)
-        alert("Não cadastrado!");
-      }
-    )
+      .subscribe(
+        res => {
+          console.log("Cadastrado!", res);
+          alert("Cadastrado!");
+          this.router.navigate(['']);
+        },
+        err => {
+          console.log("Não cadastrado!", err)
+          alert("Não cadastrado!");
+        }
+      )
 
   }
+  protected cep: string;
 
-}
+  
+  }

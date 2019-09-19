@@ -1,11 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Usuario } from '../model/usuario';
-import { HttpClient } from '@Angular/common/http';
-import { environment } from '../../environments/environment';
-
-
-
-
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -25,5 +21,6 @@ export class UsuarioService {
   getAll(){
     return this.http.get(this.db + "usuarios")
   }
-  
+
+
 }

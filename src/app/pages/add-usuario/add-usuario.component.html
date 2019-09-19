@@ -2,7 +2,7 @@
 <form #fc=ngForm (ngSubmit)="onsubmit(fc)">
         <div class="form-group">
           <label for=""></label>
-          <input type="text" class="form-control" [(ngModel)]="usuario.nome"  placeholder="Seu nome" name="nome" required type="email">
+          <input type="text" class="form-control" [(ngModel)]="usuario.nome"  placeholder="Seu nome" name="nome" required >
           <small class="form-text text-muted"></small>
         </div>
 
@@ -11,6 +11,10 @@
           <input type="email" class="form-control" [(ngModel)]="usuario.email" placeholder="Seu email" name="email"  >
           <small class="form-text text-muted" ></small>
         </div>
+
+        <app-endereco></app-endereco>
+
+        
 
         <div class="form-group">
             <label for=""></label>

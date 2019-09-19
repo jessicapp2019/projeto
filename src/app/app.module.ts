@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule } from '@Angular/forms';
-import{HttpClientModule}from '@Angular/common/http';
+import {FormsModule } from '@angular/forms';
+import{HttpClientModule}from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +10,7 @@ import { AddUsuarioComponent } from './pages/add-usuario/add-usuario.component';
 import { ListUsuarioComponent } from './pages/list-usuario/list-usuario.component';
 import { AddEventoComponent } from './pages/add-evento/add-evento.component';
 import { ListEventoComponent } from './pages/list-evento/list-evento.component';
+import { EnderecoComponent } from './pages/endereco/endereco.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ListEventoComponent } from './pages/list-evento/list-evento.component';
     AddUsuarioComponent,
     ListUsuarioComponent,
     AddEventoComponent,
-    ListEventoComponent
+    ListEventoComponent,
+    EnderecoComponent
   ],
   imports: [
     BrowserModule,
