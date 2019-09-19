@@ -8,6 +8,15 @@
       "nome": "felipe",
       "email": "liepjf@154@gmail.com",
       "id": 1
+    },
+    {
+      "ativo": true,
+      "endereco": {
+        "erro": false
+      },
+      "nome": "Fabiana",
+      "email": "fabiana@gmail.com",
+      "id": 2
     }
   ],
   "eventos": [
