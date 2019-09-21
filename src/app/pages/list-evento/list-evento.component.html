@@ -1,21 +1,18 @@
 <section class="container">
-        
-    <div class="row" *ngIf="eventos | async as users">
-           
-        <div *ngFor="let user of users">
-            <div class="card-deck" >
-                <div class="card"  >                    
-                    <div class="card-body  m-1 bg-light" >
-                        <h5 class="card-title ">Evento: {{user.nome}} </h5>
-                        <p class="card-text">Tema: {{user.tema}}</p>
-                        <p class="card-text">Data: {{user.data}}</p>
-                        <p class="card-text">Horário: {{user.horario}}</p> 
-                                          
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-</section>
+        <table class="table" *ngIf="eventos | async as events">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Tema</th>
+                <th>Data</th>
+                <th>Hora</th>
+            </tr>
+            <tr *ngFor="let e of events">
+                <td>{{e.id}}</td>
+                <td>{{e.nome}}</td>
+                <td>{{e.tema}}</td>
+                <td>{{e.data | date:"dd/MM/yyyy"}}</td>
+                <td>{{e.hora}}</td>
+            </tr>
+        </table>
+    </section>

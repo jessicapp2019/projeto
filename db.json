@@ -1,48 +1,52 @@
 {
   "usuarios": [
     {
-      "id": 0
-    },
-    {
       "ativo": true,
-      "nome": "felipe",
-      "email": "liepjf@154@gmail.com",
+      "endereco": {
+        "cep": "23520-120",
+        "logradouro": "Rua Antenor",
+        "localidade": "Rio de Janeiro",
+        "bairro": "Santa Cruz",
+        "uf": "RJ",
+        "numero": "11"
+      },
+      "nome": "Mario da Silva",
+      "email": "mario@email.com",
+      "pws": "111111",
       "id": 1
     },
     {
       "ativo": true,
       "endereco": {
-        "erro": false
+        "cep": "20220-310",
+        "logradouro": "Avenida Francisco Bicalho",
+        "localidade": "Rio de Janeiro",
+        "bairro": "Santo Cristo",
+        "uf": "RJ",
+        "numero": "1"
       },
-      "nome": "Fabiana",
-      "email": "fabiana@gmail.com",
+      "nome": "rone",
+      "email": "rone@gmail.com",
+      "pws": "171640",
       "id": 2
     }
   ],
   "eventos": [
     {
       "ativo": true,
-      "nome": "futebol",
-      "tema": "bola",
-      "data": "2019-09-12",
-      "horario": "12:12",
+      "nome": "Festa da Tia",
+      "tema": "Festa de Rua",
+      "data": "2019-10-08",
+      "hora": "21:00",
       "id": 1
     },
     {
       "ativo": true,
-      "nome": "volei",
-      "tema": "rede",
-      "data": "2019-09-12",
-      "horario": "12:30",
+      "nome": "Escola Feliz",
+      "tema": "Escolar",
+      "data": "2019-10-12",
+      "hora": "10:00",
       "id": 2
-    },
-    {
-      "ativo": true,
-      "nome": "festa",
-      "tema": "chop",
-      "data": "2019-09-29",
-      "horario": "21:57",
-      "id": 3
     }
   ]
 }

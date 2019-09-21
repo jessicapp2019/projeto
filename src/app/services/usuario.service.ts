@@ -11,16 +11,27 @@ export class UsuarioService {
   private db = environment.serveAPI;
 
   constructor(
-    protected http:HttpClient
+    protected http: HttpClient
   ) { }
 
-  save(usuario:Usuario){
+  save(usuario: Usuario) {
     return this.http.post(this.db + "usuarios", usuario)
   }
 
-  getAll(){
+  getAll() {
     return this.http.get(this.db + "usuarios")
   }
 
+  update(usuario, id) {
+    return this.http.put(this.db + "usuarios/" + id, usuario)
+  }
+
+  delete(id) {
+    return this.http.delete(this.db + "usuarios/" + id)
+  }
+
+  get(id) {
+    return this.http.get<Usuario>(this.db + "usuarios/" + id)
+  }
 
 }

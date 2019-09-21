@@ -8,10 +8,10 @@ import { Endereco } from '../model/endereco';
 export class EnderecoService {
 
   constructor(
-    protected http:HttpClient
+    protected http: HttpClient
   ) { }
 
-  getEndereco(cep){
-    return this.http.get<Endereco>("https://viacep.com.br/ws/" +cep+ "/json/")
+  getEndereco(cep) {
+    return this.http.get<Endereco>("https://viacep.com.br/ws/" + cep + "/json/")
   }
 }
