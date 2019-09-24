@@ -1,18 +1,26 @@
 <section class="container">
-        <table class="table" *ngIf="eventos | async as events">
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Tema</th>
-                <th>Data</th>
-                <th>Hora</th>
-            </tr>
-            <tr *ngFor="let e of events">
-                <td>{{e.id}}</td>
-                <td>{{e.nome}}</td>
-                <td>{{e.tema}}</td>
-                <td>{{e.data | date:"dd/MM/yyyy"}}</td>
-                <td>{{e.hora}}</td>
-            </tr>
-        </table>
-    </section>
+    <table class="table" *ngIf="eventos | async as events">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Tema</th>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>/</th>
+            <th>X</th>
+        </tr>
+        <tr *ngFor="let e of events">
+            <td>{{user.id}}</td>
+            <td>{{user.nome}}</td>
+            <td>{{user.tema}}</td>
+            <td>{{user.data | date:"dd/MM/yyyy"}}</td>
+            <td>{{user.hora}}</td>
+            <td routerLink="/addEvento/{{user.id}}" Style="cursor:pointer">
+                <i class="fa fa-edit"></i>
+            </td>
+            <td style="cursor: pointer">
+                <i class="fa fa-trash"></i>
+            </td>
+        </tr>
+    </table>
+</section>

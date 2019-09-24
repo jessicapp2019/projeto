@@ -4,8 +4,9 @@
             <div class="card-body">
                 <h2>{{e.nome}}</h2>
                 <p>{{e.tema}}</p>
-                <p class="text-danger font-weight-bold">Dia:<br> {{e.data | date:"dd/MM/yyyy"}}</p>
-                <p class="text-danger font-weight-bold">Horários:<br> {{e.hora }}</p>
+                <p class="text-success font-weight-bold">Dia:<br> {{e.data | date:"dd/MM/yyyy"}}</p>
+                <p class="text-success font-weight-bold">Horários:<br> {{e.hora }}</p>
+                <a href="/perfilEvento/{{e.id}}" class="btn btn-primary">Visitar</a>
             </div>
         </div>
     </div>
